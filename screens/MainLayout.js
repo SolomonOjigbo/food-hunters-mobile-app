@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import {
 	View,
 	Text,
@@ -295,7 +295,7 @@ const MainLayout = ({
 						}}
 					>
 						<Image
-							source={dummyData?.myProfile?.profile_image}
+							source={dummyData?.myProfile?.app_logo}
 							style={{
 								width: 40,
 								height: 40,

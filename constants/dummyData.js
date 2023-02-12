@@ -3,6 +3,7 @@ import { icons, images } from "./";
 const myProfile = {
 	name: "Food Hunters Kitchen",
 	profile_image: images.profile,
+	app_logo: images.logo,
 	address: "",
 };
 

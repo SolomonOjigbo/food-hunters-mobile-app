@@ -83,6 +83,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
 							alignItems: "center",
 							justifyContent: "center",
 						}}
+						onPress={() => navigation.closeDrawer()}
 					>
 						<Image
 							source={icons.cross}
@@ -132,11 +133,20 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
 						}}
 					/>
 					<CustomDrawerItem
-						label={constants.screens.my_wallet}
-						icon={icons.wallet}
-						isFocused={selectedTab == constants.screens.my_wallet}
+						label={constants.screens.cart}
+						icon={icons.cart}
+						isFocused={selectedTab == constants.screens.cart}
 						onPress={() => {
-							setSelectedTab(constants.screens.my_wallet);
+							setSelectedTab(constants.screens.cart);
+							navigation.navigate("MainLayout");
+						}}
+					/>
+					<CustomDrawerItem
+						label={constants.screens.orders}
+						icon={icons.wallet}
+						isFocused={selectedTab == constants.screens.orders}
+						onPress={() => {
+							setSelectedTab(constants.screens.orders);
 							navigation.navigate("MainLayout");
 						}}
 					/>
@@ -177,19 +187,19 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
 						}}
 					/>
 					<CustomDrawerItem
-						label={constants.screens.coupon}
+						label={constants.screens.coupons}
 						icon={icons.coupon}
-						isFocused={selectedTab == constants.screens.coupon}
+						isFocused={selectedTab == constants.screens.coupons}
 						onPress={() => {
-							setSelectedTab(constants.screens.coupon);
+							setSelectedTab(constants.screens.coupons);
 							navigation.navigate("MainLayout");
 						}}
 					/>
 					<CustomDrawerItem
-						label={constants.screens.setting}
+						label={constants.screens.settings}
 						icon={icons.setting}
 						onPress={() => {
-							setSelectedTab(constants.screens.setting);
+							setSelectedTab(constants.screens.settings);
 							navigation.navigate("MainLayout");
 						}}
 					/>
@@ -197,7 +207,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
 						label={constants.screens.profile}
 						icon={icons.profile}
 						onPress={() => {
-							setSelectedTab(constants.screens.help);
+							setSelectedTab(constants.screens.profile);
 							navigation.navigate("MainLayout");
 						}}
 					/>
@@ -218,7 +228,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
 	);
 };
 
-const CustomDrawer = () => {
+const CustomDrawer = ({ selectedTab, setSelectedTab }) => {
 	const [progress, setProgress] = useState(new Animated.Value(0));
 
 	const scale = Animated.interpolateNode(progress, {
