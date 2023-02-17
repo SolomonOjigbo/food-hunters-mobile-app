@@ -27,6 +27,9 @@ import Profile from "./Profile/Profile";
 //Settings
 import Settings from "./Settings/Settings";
 
+//FilterModal
+import FilterModal from "./Home/FilterModal";
+
 export {
 	MainLayout,
 	Home,
@@ -38,4 +41,5 @@ export {
 	Notification,
 	Settings,
 	Profile,
+	FilterModal,
 };
