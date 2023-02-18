@@ -1,3 +1,10 @@
+import AuthLayout from "./Authentication/AuthLayout";
+import ForgotPassword from "./Authentication/ForgotPassword";
+import Otp from "./Authentication/Otp";
+
+import SignIn from "./Authentication/SignIn";
+import SignUp from "./Authentication/SignUp";
+
 import MainLayout from "./MainLayout";
 
 // Home
@@ -24,22 +31,26 @@ import Location from "./Location/Location";
 //Profile
 import Profile from "./Profile/Profile";
 
-//Settings
-import Settings from "./Settings/Settings";
-
 //FilterModal
 import FilterModal from "./Home/FilterModal";
 
+//Onboarding
+import OnBoarding from "./OnBoarding/OnBoarding";
+
 export {
+	OnBoarding,
+	AuthLayout,
+	SignIn,
+	SignUp,
+	Otp,
+	ForgotPassword,
 	MainLayout,
 	Home,
 	Orders,
-	Search,
 	CartTab,
 	Favourite,
 	Location,
 	Notification,
-	Settings,
 	Profile,
 	FilterModal,
 };

@@ -191,25 +191,25 @@ const MainLayout = ({
 				animated: false,
 			});
 
-			homeTabFlex.value = withTiming(4, { duration: 500 });
+			homeTabFlex.value = withTiming(3, { duration: 500 });
 			homeTabColor.value = withTiming(COLORS.primary, { duration: 500 });
 		} else {
 			homeTabFlex.value = withTiming(1, { duration: 500 });
 			homeTabColor.value = withTiming(COLORS.white, { duration: 500 });
 		}
 
-		if (selectedTab == constants.screens.search) {
-			flatListRef?.current.scrollToIndex({
-				index: 1,
-				animated: false,
-			});
+		// if (selectedTab == constants.screens.search) {
+		// 	flatListRef?.current.scrollToIndex({
+		// 		index: 1,
+		// 		animated: false,
+		// 	});
 
-			searchTabFlex.value = withTiming(4, { duration: 500 });
-			searchTabColor.value = withTiming(COLORS.primary, { duration: 500 });
-		} else {
-			searchTabFlex.value = withTiming(1, { duration: 500 });
-			searchTabColor.value = withTiming(COLORS.white, { duration: 500 });
-		}
+		// 	searchTabFlex.value = withTiming(4, { duration: 500 });
+		// 	searchTabColor.value = withTiming(COLORS.primary, { duration: 500 });
+		// } else {
+		// 	searchTabFlex.value = withTiming(1, { duration: 500 });
+		// 	searchTabColor.value = withTiming(COLORS.white, { duration: 500 });
+		// }
 
 		if (selectedTab == constants.screens.cart) {
 			flatListRef?.current.scrollToIndex({
@@ -217,7 +217,7 @@ const MainLayout = ({
 				animated: false,
 			});
 
-			cartTabFlex.value = withTiming(4, { duration: 500 });
+			cartTabFlex.value = withTiming(3, { duration: 500 });
 			cartTabColor.value = withTiming(COLORS.primary, { duration: 500 });
 		} else {
 			cartTabFlex.value = withTiming(1, { duration: 500 });
@@ -230,7 +230,7 @@ const MainLayout = ({
 				animated: false,
 			});
 
-			favouriteTabFlex.value = withTiming(4, { duration: 500 });
+			favouriteTabFlex.value = withTiming(3, { duration: 500 });
 			favouriteTabColor.value = withTiming(COLORS.primary, { duration: 500 });
 		} else {
 			favouriteTabFlex.value = withTiming(1, { duration: 500 });
@@ -239,11 +239,11 @@ const MainLayout = ({
 
 		if (selectedTab == constants.screens.notification) {
 			flatListRef?.current.scrollToIndex({
-				index: 4,
+				index: 3,
 				animated: false,
 			});
 
-			notificationTabFlex.value = withTiming(4, { duration: 500 });
+			notificationTabFlex.value = withTiming(3, { duration: 500 });
 			notificationTabColor.value = withTiming(COLORS.primary, {
 				duration: 500,
 			});
@@ -326,7 +326,7 @@ const MainLayout = ({
 								}}
 							>
 								{item.label == constants.screens.home && <Home />}
-								{item.label == constants.screens.search && <Search />}
+								{/* {item.label == constants.screens.search && <Search />} */}
 								{item.label == constants.screens.cart && <CartTab />}
 								{item.label == constants.screens.favourite && <Favourite />}
 								{item.label == constants.screens.notification && (
@@ -341,7 +341,7 @@ const MainLayout = ({
 			<View style={{ height: 90, justifyContent: "flex-end" }}>
 				<LinearGradient
 					start={{ x: 0, y: 0 }}
-					end={{ x: 0, y: 4 }}
+					end={{ x: 0, y: 3 }}
 					colors={[COLORS.transparent, COLORS.lightGray1]}
 					style={{
 						position: "absolute",
@@ -374,14 +374,14 @@ const MainLayout = ({
 						innerContainerStyle={homeColorStyle}
 						onPress={() => setSelectedTab(constants.screens.home)}
 					/>
-					<TabButton
+					{/* <TabButton
 						label={constants.screens.search}
 						icon={icons.search}
 						isFocused={selectedTab == constants.screens.search}
 						outerContainerStyle={searchFlexStyle}
 						innerContainerStyle={searchColorStyle}
 						onPress={() => setSelectedTab(constants.screens.search)}
-					/>
+					/> */}
 					<TabButton
 						label={constants.screens.cart}
 						icon={icons.cart}

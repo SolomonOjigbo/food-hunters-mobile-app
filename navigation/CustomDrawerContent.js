@@ -177,23 +177,7 @@ const CustomDrawerContent = ({ navigation, selectedTab, setSelectedTab }) => {
 							navigation.navigate("MainLayout");
 						}}
 					/>
-					<CustomDrawerItem
-						label={constants.screens.coupons}
-						icon={icons.coupon}
-						isFocused={selectedTab == constants.screens.coupons}
-						onPress={() => {
-							setSelectedTab(constants.screens.coupons);
-							navigation.navigate("MainLayout");
-						}}
-					/>
-					<CustomDrawerItem
-						label={constants.screens.settings}
-						icon={icons.setting}
-						onPress={() => {
-							setSelectedTab(constants.screens.settings);
-							navigation.navigate("MainLayout");
-						}}
-					/>
+
 					<CustomDrawerItem
 						label={constants.screens.profile}
 						icon={icons.profile}

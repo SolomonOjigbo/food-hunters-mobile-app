@@ -1,3 +1,30 @@
+const onboarding_screens = [
+	{
+		id: 1,
+		backgroundImage: require("../assets/images/background_01.png"),
+		bannerImage: require("../assets/images/favourite_food.png"),
+		title: "Choose a Favourite Food",
+		description:
+			"When you order your meal from FoodHunters Kitchen, you’ll get special discounts and rewards",
+	},
+	{
+		id: 2,
+		backgroundImage: require("../assets/images/background_02.png"),
+		bannerImage: require("../assets/images/hot_delivery.png"),
+		title: "Hot Delivery to Home",
+		description:
+			"We make food ordering fast, simple and free-no matter if you order online or cash",
+	},
+	{
+		id: 3,
+		backgroundImage: require("../assets/images/background_01.png"),
+		bannerImage: require("../assets/images/great_food.png"),
+		title: "Receive the Great Food",
+		description:
+			"You’ll receive the great food within a hour. And get free delivery credits for every order.",
+	},
+];
+
 const screens = {
 	main_layout: "MainLayout",
 	home: "Home",
@@ -6,10 +33,9 @@ const screens = {
 	orders: "Orders",
 	favourite: "Favourite",
 	notification: "Notification",
-	coupons: "Coupons",
+
 	location: "Location",
 	profile: "Profile",
-	settings: "Settings",
 	help: "Help",
 };
 
@@ -18,10 +44,7 @@ const bottom_tabs = [
 		id: 0,
 		label: screens.home,
 	},
-	{
-		id: 1,
-		label: screens.search,
-	},
+
 	{
 		id: 2,
 		label: screens.cart,
@@ -111,6 +134,7 @@ const tags = [
 
 export default {
 	screens,
+	onboarding_screens,
 	bottom_tabs,
 	delivery_time,
 	ratings,
