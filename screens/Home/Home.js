@@ -10,7 +10,8 @@ import {
 } from "react-native";
 
 import { HorizontalFoodCard, VerticalFoodCard } from "../../components";
-import { COLORS, dummyData, FONTS, icons, SIZES } from "../../constants";
+import { COLORS, FONTS, icons, SIZES } from "../../constants";
+import dummyData from "../../constants/dummyData";
 import FilterModal from "./FilterModal";
 
 const Section = ({ title, onPress, children }) => {

@@ -29,8 +29,6 @@ import {
 	Favourite,
 	Notification,
 	Location,
-	Coupon,
-	Setting,
 	Profile,
 	Help,
 } from "../screens";

@@ -37,7 +37,7 @@ const VerticalFoodCard = ({ containerStyle, item, onPress }) => {
 				</View>
 
 				{/* Favourite */}
-				<TouchableOpacity onPress={() => likeHandler()}>
+				<TouchableOpacity onPress={() => console.log("Food item liked")}>
 					<Image
 						source={icons.love}
 						style={{

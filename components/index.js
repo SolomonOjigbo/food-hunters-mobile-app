@@ -7,6 +7,12 @@ import IconButton from "./IconButton";
 import TwoPointSlider from "./TwoPointSlider";
 import CustomSwitch from "./CustomSwitch";
 import FormInput from "./FormInput";
+import IconLabel from "./IconLabel";
+import LineDivider from "./LineDivider";
+import CardItem from "./CardItem";
+import CartQuantityButton from "./CartQuantityButton";
+import StepperInput from "./StepperInput";
+import Rating from "./Rating";
 
 export {
 	Header,
@@ -18,4 +24,10 @@ export {
 	TwoPointSlider,
 	CustomSwitch,
 	FormInput,
+	IconLabel,
+	LineDivider,
+	CardItem,
+	CartQuantityButton,
+	StepperInput,
+	Rating,
 };

@@ -13,9 +13,6 @@ import Home from "./Home/Home";
 //Orders
 import Orders from "./Orders/Orders";
 
-// Search
-import Search from "./Search/Search";
-
 // Cart
 import CartTab from "./Cart/CartTab";
 
@@ -33,6 +30,9 @@ import Profile from "./Profile/Profile";
 
 //FilterModal
 import FilterModal from "./Home/FilterModal";
+
+//FoodDetails
+import FoodDetail from "./Food/FoodDetail";
 
 //Onboarding
 import OnBoarding from "./OnBoarding/OnBoarding";
@@ -53,4 +53,5 @@ export {
 	Notification,
 	Profile,
 	FilterModal,
+	FoodDetail,
 };
