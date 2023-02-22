@@ -23,6 +23,10 @@ import {
 	SignUp,
 } from "../screens";
 import MyCart from "../screens/Cart/MyCart";
+import Checkout from "../screens/Cart/Checkout";
+import AddCard from "../screens/Card/AddCard";
+import MyCard from "../screens/Card/MyCard";
+import Success from "../screens/Cart/Success";
 
 /**
  * A root stack navigator is often used for displaying modals on top of all other content.
@@ -45,6 +49,10 @@ const RootNavigator = () => {
 				<Stack.Screen name="MyCart" component={MyCart} />
 				<Stack.Screen name="OnBoarding" component={OnBoarding} />
 				<Stack.Screen name="DeliveryMap" component={DeliveryMap} />
+				<Stack.Screen name="Checkout" component={Checkout} />
+				<Stack.Screen name="MyCard" component={MyCard} />
+				<Stack.Screen name="AddCard" component={AddCard} />
+				<Stack.Screen name="Success" component={Success} />
 				<Stack.Screen name="DeliveryStatus" component={DeliveryStatus} />
 				<Stack.Screen name="SignIn" component={SignIn} />
 				<Stack.Screen name="SignUp" component={SignUp} />

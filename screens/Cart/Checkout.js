@@ -28,7 +28,7 @@ const Checkout = ({ navigation, route }) => {
 
 	const checkoutHandler = () => {
 		console.log(`Checkout ${order} successful`);
-		navigation.replace("Success");
+		navigation.navigate("Success");
 	};
 
 	function renderHeader() {

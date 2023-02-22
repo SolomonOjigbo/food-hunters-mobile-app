@@ -167,7 +167,7 @@ const SignUp = () => {
 							? COLORS.primary
 							: COLORS.transparentPrimary,
 					}}
-					onPress={() => navigation.navigate("Otp")}
+					onPress={() => navigation.navigate("Home")}
 					// onPress={() => onEmailAndPasswordSignup(displayName, email, password)}
 				/>
 
