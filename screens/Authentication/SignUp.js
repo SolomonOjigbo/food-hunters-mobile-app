@@ -157,7 +157,7 @@ const SignUp = () => {
 				{/* Sign Up & Sign In */}
 				<TextButton
 					label="Sign Up"
-					disabled={isEnableSignUp() ? false : true}
+					// disabled={isEnableSignUp() ? false : true}
 					buttonContainerStyle={{
 						height: 55,
 						alignItems: "center",

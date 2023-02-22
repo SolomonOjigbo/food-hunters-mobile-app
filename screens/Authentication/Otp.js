@@ -121,7 +121,7 @@ const Otp = () => {
 							color: COLORS.primary,
 							...FONTS.body3,
 						}}
-						onPress={() => console.log("TnC")}
+						onPress={() => navigation.navigate("Home")}
 					/>
 				</View>
 			</View>

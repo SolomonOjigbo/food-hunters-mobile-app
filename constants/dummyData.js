@@ -121,11 +121,84 @@ const sizes = [
 	},
 ];
 
+const myCards = [
+	{
+		productId: 1,
+		name: "Master Card",
+		icon: require("../assets/icons/mastercard.png"),
+		card_no: "1234",
+	},
+	{
+		productId: 2,
+		name: "Google Pay",
+		icon: require("../assets/icons/google.png"),
+		card_no: "1234",
+	},
+];
+
+const allCards = [
+	{
+		productId: 1,
+		name: "Apple Pay",
+		icon: require("../assets/icons/apple.png"),
+	},
+	{
+		productId: 2,
+		name: "Visa",
+		icon: require("../assets/icons/visa.png"),
+	},
+	{
+		productId: 3,
+		name: "PayPal",
+		icon: require("../assets/icons/paypal.png"),
+	},
+	{
+		productId: 4,
+		name: "Google Pay",
+		icon: require("../assets/icons/google.png"),
+	},
+	{
+		productId: 5,
+		name: "Master Card",
+		icon: require("../assets/icons/mastercard.png"),
+	},
+];
+
+const fromLocs = [
+	{
+		latitude: 58.85524552763719,
+		longitude: 5.7201897059969475,
+	},
+	{
+		latitude: 58.85260105183051,
+		longitude: 5.743285908320634,
+	},
+	{
+		latitude: 1.5238753474714375,
+		longitude: 110.34261833833622,
+	},
+	{
+		latitude: 1.5578068150528928,
+		longitude: 110.35482523764315,
+	},
+	{
+		latitude: 1.558050496260768,
+		longitude: 110.34743759630511,
+	},
+	{
+		latitude: 1.5573478487252896,
+		longitude: 110.35568783282145,
+	},
+];
+
 const dummyData = {
 	myProfile,
 	categories,
 	menu,
 	sizes,
+	myCards,
+	allCards,
+	fromLocs,
 };
 
 export default dummyData;

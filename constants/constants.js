@@ -29,12 +29,11 @@ const screens = {
 	main_layout: "MainLayout",
 	home: "Home",
 	search: "Search",
-	cart: "Cart",
-	orders: "Orders",
+	cart: "MyCart",
+	orders: "DeliveryStatus",
 	favourite: "Favourite",
 	notification: "Notification",
-
-	location: "Location",
+	delivery: "DeliveryMap",
 	profile: "Profile",
 	help: "Help",
 };

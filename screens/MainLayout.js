@@ -42,6 +42,7 @@ import {
 	icons,
 	dummyData,
 } from "../constants";
+import MyCart from "./Cart/MyCart";
 
 const TabButton = ({
 	label,
@@ -325,7 +326,7 @@ const MainLayout = ({
 							>
 								{item.label == constants.screens.home && <Home />}
 								{/* {item.label == constants.screens.search && <Search />} */}
-								{item.label == constants.screens.cart && <CartTab />}
+								{item.label == constants.screens.cart && <MyCart />}
 								{item.label == constants.screens.favourite && <Favourite />}
 								{item.label == constants.screens.notification && (
 									<Notification />

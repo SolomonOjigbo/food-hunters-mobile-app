@@ -13,6 +13,9 @@ import CardItem from "./CardItem";
 import CartQuantityButton from "./CartQuantityButton";
 import StepperInput from "./StepperInput";
 import Rating from "./Rating";
+import FormInputCheck from "./FormInputCheck";
+import RadioButton from "./RadioButton";
+import FooterTotal from "./FooterTotal";
 
 export {
 	Header,
@@ -24,10 +27,13 @@ export {
 	TwoPointSlider,
 	CustomSwitch,
 	FormInput,
+	FormInputCheck,
 	IconLabel,
 	LineDivider,
 	CardItem,
 	CartQuantityButton,
 	StepperInput,
 	Rating,
+	RadioButton,
+	FooterTotal,
 };

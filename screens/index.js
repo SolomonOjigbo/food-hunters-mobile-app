@@ -22,8 +22,8 @@ import Favourite from "./Favourite/Favourite";
 // Notification
 import Notification from "./Notification/Notification";
 
-//Locations
-import Location from "./Location/Location";
+// //Locations
+// import Location from "./Location/Location";
 
 //Profile
 import Profile from "./Profile/Profile";
@@ -37,6 +37,12 @@ import FoodDetail from "./Food/FoodDetail";
 //Onboarding
 import OnBoarding from "./OnBoarding/OnBoarding";
 
+//DeliveryMap
+import DeliveryMap from "./Delivery/DeliveryMap";
+
+//DeliveryStatus
+import DeliveryStatus from "./Delivery/DeliveryStatus";
+
 export {
 	OnBoarding,
 	AuthLayout,
@@ -49,9 +55,10 @@ export {
 	Orders,
 	CartTab,
 	Favourite,
-	Location,
 	Notification,
 	Profile,
 	FilterModal,
 	FoodDetail,
+	DeliveryMap,
+	DeliveryStatus,
 };

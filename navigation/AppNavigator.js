@@ -12,6 +12,8 @@ import CustomDrawer from "./CustomDrawer";
 
 import {
 	CartTab,
+	DeliveryMap,
+	DeliveryStatus,
 	FoodDetail,
 	ForgotPassword,
 	OnBoarding,
@@ -20,6 +22,7 @@ import {
 	SignIn,
 	SignUp,
 } from "../screens";
+import MyCart from "../screens/Cart/MyCart";
 
 /**
  * A root stack navigator is often used for displaying modals on top of all other content.
@@ -33,14 +36,16 @@ const RootNavigator = () => {
 			screenOptions={{
 				headerShown: false,
 			}}
-			initialRouteName={"Home"}
+			initialRouteName={"OnBoarding"}
 		>
 			<>
 				<Stack.Screen name="Home" component={CustomDrawer} />
 				<Stack.Screen name="Profile" component={Profile} />
 				<Stack.Screen name="FoodDetail" component={FoodDetail} />
-				<Stack.Screen name="MyCart" component={CartTab} />
+				<Stack.Screen name="MyCart" component={MyCart} />
 				<Stack.Screen name="OnBoarding" component={OnBoarding} />
+				<Stack.Screen name="DeliveryMap" component={DeliveryMap} />
+				<Stack.Screen name="DeliveryStatus" component={DeliveryStatus} />
 				<Stack.Screen name="SignIn" component={SignIn} />
 				<Stack.Screen name="SignUp" component={SignUp} />
 				<Stack.Screen name="ForgotPassword" component={ForgotPassword} />

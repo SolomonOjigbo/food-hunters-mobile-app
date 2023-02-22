@@ -133,7 +133,7 @@ const SignIn = () => {
 				{/* Sign In */}
 				<TextButton
 					label="Sign In"
-					disabled={isEnableSignIn() ? false : true}
+					// disabled={isEnableSignIn() ? false : true}
 					buttonContainerStyle={{
 						height: 55,
 						alignItems: "center",
